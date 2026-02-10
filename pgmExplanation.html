@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CIS 119 Spring - Wyatt Phelps</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js"></script>
+  <header>
+    <!--repeated top of page info-->
+    <h1>General program explanation </h1>
+    
+  </header>
+<INTRO>
+    <!-- extra starting information-->  
+     <b>We will take a look at a program I made for my intro to programing class </b> <br>
+
+    
+  </INTRO>
+  <main>
+    <!--main content goes here-->
+    
+    <br>
+    This specific program was made to calculate the prices of theoretically weather a city garbage plan was cheaper or a private one was cheaper <br>
+    <br>
+    <code>
+    //calculate private company cost<br>
+    privbags = (int)((trashgallons - privcontainercap)/privbagcap+0.99);<br>
+    privcompanycost = privcontainerprice + (privbags * privbagprice);<br>
+    <br>
+    //calculate city cost<br>
+    lgcitybags = trashgallons/lgcitycap;<br>
+    remaingallons = trashgallons % lgcitycap;<br>
+    medcitybags = remaingallons/medcitycap;<br>
+    remaingallons = trashgallons % medcitycap;<br>
+    smallcitybags = (remaingallons/smallcitycap)+0.99;<br>
+    citycost = lgcitybags * lgcityprice + medcitybags * medcityprice + smallcitybags * smallcityprice;<br>
+    </code>
+    <br>
+    Above was how the program calculates the individual prices of the city plan and the private company plan. <br>
+    I collected inputs from code not seen here things like <code>trashgallons</code> and every other variable is imputed by hand when the program runs. <br>
+
+  </main>
+  <footer>
+    <!--repeated bottom of page content goes here-->
+    
+  </footer>
+</body>
+</html>
