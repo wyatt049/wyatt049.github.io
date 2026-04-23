@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CIS 119 Spring - Wyatt Phelps</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="scripts.js"></script>
+  
 
   <style>
     /* Page background + contrasting text */
@@ -23,8 +23,8 @@
       background-color: #2f3d4d;
       padding: 20px;
       margin: 20px;
-      border: 4px dashed #ff9800;   /* non-solid, non-black */
-      border-radius: 12px;          /* rounded corners */
+      border: 4px dashed #ff9800;
+      border-radius: 12px;
     }
 
     /* Headings inside sections */
@@ -40,26 +40,31 @@
     a:hover {
       color: #ffb74d;
     }
+
+    /* Clock styling */
+    #clock {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-top: 10px;
+    }
   </style>
 
 </head>
 
 <body>
   <header>
-  <!--repeated top of page info-->
     <h1>Hello, World! This is my CIS 119 task.</h1>
     Wyatt
+
+    <!-- 🔥 Live Clock Added Here -->
+    <div id="clock"></div>
   </header>
 
   <nav>
-  <!--repeated navigation here, may also move to header-->
     Nav area
   </nav>
 
   <main>
-  <!--main content goes here-->
-    
-
     <div class="labs">
       <h2>Labs</h2>
       <ul>
@@ -77,12 +82,22 @@
         <li><a href="Pope.html" target="_blank">Chapter 4 Homework </a></li>
       </ul>
     </div>
-
   </main>
 
   <footer>
-  <!--repeated bottom of page content goes here-->
     Footer area
   </footer>
+
+  <!-- 🔥 Clock Script Added at Bottom of Body -->
+  <script>
+    function updateClock() {
+      const now = new Date();
+      document.getElementById("clock").innerText = now.toLocaleTimeString();
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+
 </body>
 </html>
