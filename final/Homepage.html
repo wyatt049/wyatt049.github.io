@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>final</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+  }
+
+  /* OUTER GRID */
+  .container {
+    display: grid;
+    
+    
+    text-align: center;
+    gap: 20px;
+  }
+
+  .title {
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid black;
+    padding: 50px;
+    text-align: center;
+  }
+
+  .left-box {
+  width: 300px;          
+  height: 300px;         
+  border: 2px solid black;
+  padding: 15px;
+  position: absolute;
+  left: 30%;               
+  top: 250px;               
+  background-color: white;
+  }
+
+  .Right-box {
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  width: 300px;
+  height: 400px;
+  
+}
+
+.my-img {
+  width: 100%;   /* fills the box width */
+  height: auto;
+}
+
+.Bottom-box {
+  width: 400px;          
+  height: 50px;         
+  border: 2px solid black;
+  padding: 15px;
+  position: absolute;
+  left: 37%;               
+  top: 600px;               
+  background-color: white;
+}
+
+.Link-box {
+  width: 100px;          
+  height: 50px;         
+  padding: 15px;
+  position: absolute;
+  left: 37%;               
+  top: 700px;      
+
+  display: flex;
+  justify-content: space-between; 
+  width: 100%;
+  max-width: 20%;
+  
+}
+
+
+
+
+
+</style>
+</head>
+
+<body>
+
+<div>
+ 
+  <div class="title"> How Too <br> D&D </div> 
+
+  <div class="left-box">
+  D&D is a tabletop role-playing game where players create characters and embark on adventures in a fantasy world. <br> <br>
+  The game is typically led by a Dungeon Master or as most people call them The "DM" who narrates the story and controls the game world, 
+  while players make decisions as their characters and while using diffrent dice to see how well they do with particullar actions. <br> <br>
+  Today we will be going over the basics of how to play D&D things like charcter creation and world building for your Lovely DM.
+  </div>
+
+  <div class="Right-box">
+  <img src="D&DLogo.png" class="my-img">
+  
+  </div>
+
+
+  <div class="Bottom-box"> 
+  The Link on the left will Bring you to Stuff for Character Creation, 
+  the Middle box will have a intro for DMs while the one on the right 
+  will lead to a short vocabulary page. 
+  </div> 
+
+  <div class="Link-box">
+  <a href="Depth1/Character.html">Character Creation</a>           
+  <a href="Depth1/Dungeon Master.html">DM</a>
+  <a href="Depth1/Vocabulary.html">Vocabulary</a>
+  </div> 
+
+</div>
+
+</body>
+</html>
