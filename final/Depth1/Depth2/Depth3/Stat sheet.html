@@ -2,99 +2,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Backstory</title>
+    <meta charset="UTF-8">
+    <title>Stat Sheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        .image-slot {
+        display: inline-block;
+        padding: 10px;
+        }
 
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 20px;
-  }
+        .image-slot img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        }
 
-  /* OUTER GRID */
-  .container {
-    display: grid;
-    
-    
-    text-align: center;
-    gap: 20px;
-  }
-
-  .title {
-    font-size: 32px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 4px solid black;
-    padding: 50px;
-    text-align: center;
-  }
-
-  .left-box {
-  width: 300px;          
-  height: 300px;         
-  border: 2px solid black;
-  padding: 15px;
-  position: absolute;
-  left: 30%;               
-  top: 250px;               
-  background-color: white;
-  }
-
-  .Right-box {
-  position: absolute;
-  top: 300px;
-  left: 50%;
-  width: 300px;
-  height: 400px;
-  
-}
-
-.my-img {
-  width: 100%;   /* fills the box width */
-  height: auto;
-}
-
-.Bottom-box {
-  width: 400px;          
-  height: 50px;         
-  border: 2px solid black;
-  padding: 15px;
-  position: absolute;
-  left: 37%;               
-  top: 600px;               
-  background-color: white;
-}
-
-.Link-box {
-  width: 400px;          
-  height: 50px;         
-  border: 2px solid black;
-  padding: 15px;
-  position: absolute;
-  left: 37%;               
-  top: 700px;               
-  background-color: white;
-}
-
-
-
-
-
-</style>
+        .stat-image {
+        width: 300px;   /* change this number to resize */
+        height: auto;   /* keeps the proportions correct */
+        }
+    </style>
 </head>
 
 <body>
 
-<div>
- 
-  
+    <h1>Stat Sheet</h1>
 
-</div>
+
+        <h2>What Is a Stat Sheet?</h2>
+        <p>
+            A Stat Sheet is the mechanical summary of a character. It shows their core abilities, 
+            strengths, weaknesses, and the numbers that define how they interact with the world. 
+            While the backstory explains who the character is, the stat sheet explains what they can do. 
+            The image below is a partial stat sheet because they are usually 2-3 pages long.
+        </p>
+
+        <div class="image-slot">
+        <img src="Example bob.png" alt="Stat Sheet Example">
+        </div>
+
+
+        <p>
+            Below are the major components that make up a stat sheet. Each section has its own page 
+            elsewhere on the site where you can learn more about how it works.
+        </p>
+
+
+
+        <h2>Backstory</h2>
+        <p>
+            A brief summary of the character’s history and motivations.  
+            <a href="Backstory.html">Backstory</a>
+        </p>
+
+
+
+        <h2>Universal Features</h2>
+        <p>
+            Basic traits every character has, such as HP, AC, movement, and more.  
+            <a href="Depth4/Universal Features.html">Universal Features</a>
+        </p>
+
+
+
+        <h2>Classes</h2>
+        <p>
+            Determines the character’s role and abilities.  
+            <a href="Depth4/Classes.html">Classes</a>
+        </p>
+
+
+
+        <h2>Skills</h2>
+        <p>
+            Represents trained or natural talents.  
+            <a href="Depth4/Skills.html">Skills</a>
+        </p>
+
+
+
+        <h2>Stats</h2>
+        <p>
+            Core ability scores that define the character’s strengths.  
+            <a href="Depth4/Stats.html">Stats</a>
+        </p>
+
 
 </body>
 </html>
